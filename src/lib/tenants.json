@@ -1,0 +1,51 @@
+
+[
+  {
+    "id": "1",
+    "name": "Speedo Nnodu 1",
+    "propertyAddress": "64 Jemtok street, Ago-Palace way, Lagos Nigeria, Apt 1",
+    "imageUrl": "https://picsum.photos/seed/1/200/200"
+  },
+  {
+    "id": "2",
+    "name": "Tried",
+    "propertyAddress": "64 Jemtok street, Ago-Palace way, Lagos Nigeria, Apt 2",
+    "imageUrl": "https://picsum.photos/seed/2/200/200"
+  },
+  {
+    "id": "3",
+    "name": "Charlie Brown",
+    "propertyAddress": "64 Jemtok street, Ago-Palace way, Lagos Nigeria, Unit A",
+    "imageUrl": "https://picsum.photos/seed/3/200/200"
+  },
+  {
+    "id": "4",
+    "name": "Diana Miller",
+    "propertyAddress": "64 Jemtok street, Ago-Palace way, Lagos Nigeria, Unit B",
+    "imageUrl": "https://picsum.photos/seed/4/200/200"
+  },
+  {
+    "id": "5",
+    "name": "Ethan Davis",
+    "propertyAddress": "64 Jemtok street, Ago-Palace way, Lagos Nigeria, Apt 3",
+    "imageUrl": "https://picsum.photos/seed/5/200/200"
+  },
+  {
+    "id": "6",
+    "name": "Fiona Garcia",
+    "propertyAddress": "64 Jemtok street, Ago-Palace way, Lagos Nigeria, Apt 4",
+    "imageUrl": "https://picsum.photos/seed/6/200/200"
+  },
+  {
+    "id": "7",
+    "name": "George Rodriguez",
+    "propertyAddress": "64 Jemtok street, Ago-Palace way, Lagos Nigeria, #101",
+    "imageUrl": "https://picsum.photos/seed/7/200/200"
+  },
+  {
+    "id": "8",
+    "name": "Hannah Martinez",
+    "propertyAddress": "64 Jemtok street, Ago-Palace way, Lagos Nigeria, #102",
+    "imageUrl": "https://picsum.photos/seed/8/200/200"
+  }
+]

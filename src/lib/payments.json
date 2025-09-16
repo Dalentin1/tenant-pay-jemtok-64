@@ -1,0 +1,146 @@
+[
+  {
+    "id": "p1",
+    "tenantId": "1",
+    "billId": "b3",
+    "amount": 850,
+    "paymentDate": "2024-06-28T10:00:00Z",
+    "receiptId": "rec_p1",
+    "receiptText": "RECEIPT\n-------\nTenant: Alice Johnson\nAmount: ₦850.00\nDate: 2024-06-28\nFor: June 2024 Rent"
+  },
+  {
+    "tenantId": "1",
+    "billId": "b-1757784335015",
+    "amount": 1500,
+    "paymentDate": "2025-09-13T17:58:20.477Z",
+    "id": "p-1757786302287",
+    "receiptId": "rec_p-1757786302287",
+    "receiptText": "Payment Receipt\n\nDate: 2025-09-13\nReceipt ID: rec_b-1757784335015_1757786300477\n\nReceived From: Speedo Nnodu\nAmount: ₦1,500.00 (One Thousand Five Hundred Naira Only)\n\nFor Property Address: 123 Maple St, Apt 1\n\nThis payment has been successfully processed.\n\nThank you."
+  },
+  {
+    "tenantId": "1",
+    "billId": "b-1757784335015",
+    "amount": 10,
+    "paymentDate": "2025-09-13T18:01:27.013Z",
+    "id": "p-1757786490016",
+    "receiptId": "rec_p-1757786490016",
+    "receiptText": "PAYMENT RECEIPT\n\nReceipt ID: rec_b-1757784335015_1757786487013\nDate: 2025-09-13\n\nTenant Name: Speedo Nnodu\n\nPayment Details:\nAmount Received: ₦10 (Ten Naira Only)\n\nFor Property:\n123 Maple St, Apt 1\n\nThis serves as a confirmation that payment has been successfully received.\n\nThank you for your prompt payment."
+  },
+  {
+    "tenantId": "1",
+    "billId": "b-1757784335015",
+    "amount": 400,
+    "paymentDate": "2025-09-13T18:55:30.194Z",
+    "id": "p-1757789731823",
+    "receiptId": "rec_p-1757789731823",
+    "receiptText": "Payment Receipt\n\nDate: 2025-09-13\nReceipt ID: rec_b-1757784335015_1757789730194\n\nReceived From: Speedo Nnodu 1\nAmount Paid: ₦400 (Four Hundred Naira Only)\n\nFor Property Address: 123 Maple St, Apt 1\n\nThis payment has been successfully processed.\n\nThank you."
+  },
+  {
+    "tenantId": "3",
+    "billId": "b-1757784474191",
+    "amount": 200,
+    "paymentDate": "2025-09-13T19:10:00.837Z",
+    "id": "p-1757790602148",
+    "receiptId": "rec_p-1757790602148",
+    "receiptText": "----- PAYMENT RECEIPT -----\nReceipt ID: rec_b-1757784474191_1757790600838\nPayment Date: 2025-09-13\n\nTenant Name: Charlie Brown\nProperty Address: 456 Oak Ave, Unit A\nPayment Amount: ₦200\n\nThank you for your payment.\n------------------------------"
+  },
+  {
+    "tenantId": "3",
+    "billId": "b-1757792485593",
+    "amount": 4000,
+    "paymentDate": "2025-09-13T19:43:36.337Z",
+    "id": "p-1757792618492",
+    "receiptId": "rec_p-1757792618492",
+    "receiptText": "Payment ReceiptTenant Name: Charlie BrownPayment Amount: ₦4000.00 (Four Thousand Naira Only)Payment Date: 2025-09-13Property Address: 456 Oak Ave, Unit AReceipt ID: rec_b-1757792485593_1757792616338This serves as an official receipt for the payment received.Thank you for your payment."
+  },
+  {
+    "tenantId": "4",
+    "billId": "b-1757792912449",
+    "amount": 2500,
+    "paymentDate": "2025-09-13T19:49:22.785Z",
+    "id": "p-1757792964002",
+    "receiptId": "rec_p-1757792964002",
+    "receiptText": "Payment Receipt\n\nDate: 2025-09-13\nReceipt ID: rec_b-1757792912449_1757792962785\n\nReceived From: Diana Miller\nAmount: ₦2500.00 (Two Thousand Five Hundred Naira Only)\n\nFor: Rent Payment\nProperty Address: 456 Oak Ave, Unit B\n\nThank you for your payment."
+  },
+  {
+    "tenantId": "4",
+    "billId": "b-1757793002858",
+    "amount": 5000,
+    "paymentDate": "2025-09-13T19:51:14.432Z",
+    "id": "p-1757793075784",
+    "receiptId": "rec_p-1757793075784",
+    "receiptText": "Payment Receipt\n\nReceipt ID: rec_b-1757793002858_1757793074432\nPayment Date: 2025-09-13\n\nReceived From: Diana Miller\nProperty Address: 456 Oak Ave, Unit B\n\nAmount Paid: ₦5000 (Five Thousand Naira Only)\n\nThis is to acknowledge receipt of the above-mentioned payment.\n\nThank you.\n"
+  },
+  {
+    "tenantId": "1",
+    "billId": "b-1757784335015",
+    "amount": 90,
+    "paymentDate": "2025-09-13T20:06:08.960Z",
+    "id": "p-1757793971910",
+    "receiptId": "rec_p-1757793971910",
+    "receiptText": "PAYMENT RECEIPT | Receipt ID: rec_b-1757784335015_1757793968960 | Date: 2025-09-13 | Tenant Name: Speedo Nnodu 1 | Property Address: 64 Jemtok street, Ago-Palace way, Lagos Nigeria, Apt 1 | Amount Paid: ₦90 | Payment Method: Online (Paystack) | Paystack Reference: 1757793947139 | This is an electronically generated receipt. No signature is required."
+  },
+  {
+    "tenantId": "7",
+    "billId": "b-1757804902715",
+    "amount": 3500,
+    "paymentDate": "2025-09-13T23:09:29.390Z",
+    "id": "p-1757804972380",
+    "receiptId": "rec_p-1757804972380",
+    "receiptText": "Payment Receipt\n-----------------------------------\nRECEIPT ID: rec_b-1757804902715_1757804969390\nPAYMENT DATE: 2025-09-13\n\nTENANT NAME: George Rodriguez\n\nPROPERTY ADDRESS:\n64 Jemtok street, Ago-Palace way, Lagos Nigeria, #101\n\nAMOUNT PAID: ₦3500\n\nPAYMENT METHOD: Online (Paystack)\nPAYSTACK REFERENCE: 1757804948153\n\n-----------------------------------\nThis serves as a digital receipt for your payment.\nThank you for your timely payment."
+  },
+  {
+    "tenantId": "1",
+    "billId": "b-1757806642268",
+    "amount": 3500,
+    "paymentDate": "2025-09-13T23:56:49.980Z",
+    "id": "p-1757807813119",
+    "receiptId": "rec_p-1757807813119",
+    "receiptText": "----- PAYMENT RECEIPT -----\n\nReceipt ID: rec_b-1757806642268_1757807809981\nDate: 2025-09-13\n\nTenant Name: Speedo Nnodu 1\nProperty Address: 64 Jemtok street, Ago-Palace way, Lagos Nigeria, Ago-Palace way, Lagos Nigeria, Ago-Palace way, Lagos Nigeria, Apt 1\n\nPayment Amount: ₦3500.00\n\nPayment Method: Paystack\nPaystack Reference: 1757807738367\n\nThank you for your payment.\n--------------------------"
+  },
+  {
+    "tenantId": "2",
+    "billId": "b-1757784462108",
+    "amount": 1500,
+    "paymentDate": "2025-09-14T00:01:14.626Z",
+    "id": "p-1757808077369",
+    "receiptId": "rec_p-1757808077369",
+    "receiptText": "----- PAYMENT RECEIPT -----\n\nReceipt ID: rec_b-1757784462108_1757808074626\nPayment Date: 2025-09-14\n\nTenant Name: Tried\nProperty Address: 64 Jemtok street, Ago-Palace way, Lagos Nigeria, Apt 2\n\nAmount Paid: ₦1500.00 (One Thousand Five Hundred Naira Only)\n\nPayment Method: Paystack\nPaystack Reference: 1757808059114\n\nThis receipt acknowledges the payment received.\n\nThank you."
+  },
+  {
+    "tenantId": "2",
+    "billId": "b-1757808109041",
+    "amount": 5000,
+    "paymentDate": "2025-09-14T00:14:56.145Z",
+    "id": "p-1757808898921",
+    "receiptId": "rec_p-1757808898921",
+    "receiptText": "----- PAYMENT RECEIPT -----Receipt ID: rec_b-1757808109041_1757808896145Date: 2025-09-14Tenant Name: TriedProperty Address: 64 Jemtok street, Ago-Palace way, Lagos Nigeria, Apt 2Payment Amount: ₦5,000.00 (Five Thousand Naira Only)Payment Reference: Paystack Ref: 1757808877535------------------------------Thank you for your payment. This acknowledges receipt of funds for your property.------------------------------"
+  },
+  {
+    "tenantId": "2",
+    "billId": "b-1757808933595",
+    "amount": 5000,
+    "paymentDate": "2025-09-14T00:16:12.387Z",
+    "id": "p-1757808974026",
+    "receiptId": "rec_p-1757808974026",
+    "receiptText": "OFFICIAL PAYMENT RECEIPT For Rent PaymentDate: 2025-09-14Receipt ID: rec_b-1757808933595_1757808972387Tenant Name: TriedProperty Address: 64 Jemtok street, Ago-Palace way, Lagos Nigeria, Apt 2Payment Amount: ₦5000 (Five Thousand Naira Only)Payment Method: PaystackReference Number: 1757808952457Thank you for your payment."
+  },
+  {
+    "tenantId": "2",
+    "billId": "b-1757808995556",
+    "amount": 3500,
+    "paymentDate": "2025-09-14T00:17:09.458Z",
+    "id": "p-1757809031512",
+    "receiptId": "rec_p-1757809031512",
+    "receiptText": "***** PAYMENT RECEIPT *****\n\nDate: 2025-09-14\nReceipt ID: rec_b-1757808995556_1757809029458\n\nTenant Name: Tried\n\nProperty Address:\n64 Jemtok street, Ago-Palace way, Lagos Nigeria, Apt 2\n\nPayment Details:\nAmount Received: ₦3500\nPayment Method: Online (Paystack)\nPaystack Reference: 1757809013131\n\nThis serves as a confirmation of your payment.\n\nThank you for your payment.\n***** END OF RECEIPT *****"
+  },
+  {
+    "tenantId": "2",
+    "billId": "b-1757809071108",
+    "amount": 3500,
+    "paymentDate": "2025-09-14T17:20:35.926Z",
+    "id": "p-1757870438663",
+    "receiptId": "rec_p-1757870438663",
+    "receiptText": "Payment ReceiptDate: 2025-09-14Receipt ID: rec_b-1757809071108_1757870435926---Tenant Details---Tenant Name: TriedProperty Address: 64 Jemtok street, Ago-Palace way, Lagos Nigeria, Apt 2---Payment Details---Amount Received: ₦3500 (Naira)Payment Method: Online TransferPaystack Reference: 1757870416972---Thank you for your payment---"
+  }
+]

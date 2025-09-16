@@ -1,0 +1,146 @@
+[
+  {
+    "id": "b3",
+    "tenantId": "1",
+    "amount": 850,
+    "month": "June 2024",
+    "status": "paid",
+    "dueDate": "2024-06-30T23:59:59Z",
+    "carriedOverAmount": 0
+  },
+  {
+    "tenantId": "1",
+    "amount": 0,
+    "month": "2025-09",
+    "status": "paid",
+    "dueDate": "2025-09-13T17:25:35.013Z",
+    "id": "b-1757784335015",
+    "carriedOverAmount": 0
+  },
+  {
+    "tenantId": "2",
+    "amount": 500,
+    "month": "2025-09",
+    "status": "carried-over",
+    "dueDate": "2025-09-13T17:27:42.106Z",
+    "id": "b-1757784462108",
+    "carriedOverAmount": 500
+  },
+  {
+    "tenantId": "3",
+    "amount": 1800,
+    "month": "2025-09",
+    "status": "carried-over",
+    "dueDate": "2025-09-13T17:27:54.190Z",
+    "id": "b-1757784474191",
+    "carriedOverAmount": 1800
+  },
+  {
+    "tenantId": "3",
+    "amount": 3800,
+    "month": "2025-10",
+    "status": "carried-over",
+    "dueDate": "2025-09-13T19:21:16.516Z",
+    "id": "b-1757791276519",
+    "carriedOverAmount": 3800
+  },
+  {
+    "tenantId": "3",
+    "amount": 0,
+    "month": "2025-11",
+    "status": "paid",
+    "dueDate": "2025-09-13T19:41:25.591Z",
+    "id": "b-1757792485593",
+    "carriedOverAmount": 0
+  },
+  {
+    "tenantId": "4",
+    "amount": 500,
+    "month": "2025-09",
+    "status": "carried-over",
+    "dueDate": "2025-09-13T19:48:32.446Z",
+    "id": "b-1757792912449",
+    "carriedOverAmount": 500
+  },
+  {
+    "tenantId": "4",
+    "amount": 0,
+    "month": "2025-10",
+    "status": "paid",
+    "dueDate": "2025-09-13T19:50:02.857Z",
+    "id": "b-1757793002858",
+    "carriedOverAmount": 0
+  },
+  {
+    "tenantId": "4",
+    "amount": 3000,
+    "month": "2025-11",
+    "status": "unpaid",
+    "dueDate": "2025-09-13T19:52:11.908Z",
+    "id": "b-1757793131909",
+    "carriedOverAmount": 0
+  },
+  {
+    "tenantId": "7",
+    "amount": 1500,
+    "month": "2025-09",
+    "status": "carried-over",
+    "dueDate": "2025-09-13T23:08:22.714Z",
+    "id": "b-1757804902715",
+    "carriedOverAmount": 1500
+  },
+  {
+    "tenantId": "7",
+    "amount": 5500,
+    "month": "2025-10",
+    "status": "unpaid",
+    "dueDate": "2025-09-13T23:10:30.217Z",
+    "id": "b-1757805030220",
+    "carriedOverAmount": 1500
+  },
+  {
+    "tenantId": "1",
+    "amount": 0,
+    "month": "2025-09",
+    "status": "paid",
+    "dueDate": "2025-09-13T23:37:22.267Z",
+    "id": "b-1757806642268",
+    "carriedOverAmount": 0
+  },
+  {
+    "tenantId": "2",
+    "amount": 0,
+    "month": "2025-10",
+    "status": "paid",
+    "dueDate": "2025-09-14T00:01:49.025Z",
+    "id": "b-1757808109041",
+    "carriedOverAmount": 500
+  },
+  {
+    "tenantId": "2",
+    "amount": 0,
+    "month": "2025-09",
+    "status": "paid",
+    "dueDate": "2025-09-14T00:15:33.593Z",
+    "id": "b-1757808933595",
+    "carriedOverAmount": 0
+  },
+  {
+    "tenantId": "2",
+    "amount": 1500,
+    "month": "2025-09",
+    "status": "carried-over",
+    "dueDate": "2025-09-14T00:16:35.554Z",
+    "id": "b-1757808995556",
+    "carriedOverAmount": 0
+  },
+  {
+    "tenantId": "2",
+    "amount": 4500,
+    "month": "2025-10",
+    "status": "unpaid",
+    "dueDate": "2025-09-14T00:17:51.105Z",
+    "id": "b-1757809071108",
+    "carriedOverAmount": 1500
+  }
+]
