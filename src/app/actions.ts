@@ -6,7 +6,7 @@ import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { addBill, addPayment, addSharedBill, deleteSharedBill, getTenantById, getUnpaidBillForTenant, addAnnouncement, updateTenant, addDelegate, deleteDelegate, updateBillStatus, getTenants, updateAllocatedBill, updateBill, updateAdminPassword } from '@/lib/data';
 import { generatePaymentReceipt } from '@/ai/flows/generate-payment-receipt';
-import { Bill, SharedBill, Announcement, Delegate } from './lib/types';
+import { Bill, SharedBill, Announcement, Delegate } from '@/lib/types';
 
 const billSchema = z.object({
   tenantId: z.string().min(1, 'Tenant is required'),

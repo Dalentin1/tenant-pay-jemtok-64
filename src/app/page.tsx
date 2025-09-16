@@ -19,8 +19,8 @@ export default async function SelectionPage() {
   const tenants = await getTenants();
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4">
-      <Card className="w-full max-w-4xl shadow-2xl">
+    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 bg-[length:400%_400%] animate-gradient">
+      <Card className="w-full max-w-4xl bg-transparent shadow-none border-none">
         <CardHeader className="text-center">
           <div className="mx-auto mb-4">
             <AppLogo />

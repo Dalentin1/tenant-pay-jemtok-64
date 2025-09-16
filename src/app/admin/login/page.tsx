@@ -1,8 +1,7 @@
-
 'use client';
 import { useActionState } from 'react';
 import { useFormStatus } from 'react-dom';
-import { adminLoginAction } from '@/app/actions';
+import { adminLoginAction } from '@/app/admin/actions';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -30,7 +29,7 @@ export default function AdminLoginPage() {
   const [state, formAction] = useActionState(adminLoginAction, initialState);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-muted/40">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 bg-[length:400%_400%] animate-gradient">
       <Card className="w-full max-w-sm shadow-xl">
         <CardHeader className="text-center">
           <div className="mx-auto mb-4">

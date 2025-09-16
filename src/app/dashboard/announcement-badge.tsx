@@ -4,15 +4,18 @@ import { useState, useEffect, useCallback } from 'react';
 import { getAnnouncements } from '@/lib/data';
 import { SidebarMenuBadge } from '@/components/ui/sidebar';
 
-export default function AnnouncementBadge() {
+export default function AnnouncementBadge({ tenantId }: { tenantId?: string }) {
   const [unreadCount, setUnreadCount] = useState(0);
 
   const calculateUnreadCount = useCallback(async () => {
+    if (!tenantId) return;
+
     try {
       const allAnnouncements = await getAnnouncements();
       if (typeof window !== 'undefined') {
+        const storageKey = `readAnnouncementIds_${tenantId}`;
         const readAnnouncementIds: string[] = JSON.parse(
-          localStorage.getItem('readAnnouncementIds') || '[]'
+          localStorage.getItem(storageKey) || '[]'
         );
         const newCount = allAnnouncements.filter(
           (ann) => !readAnnouncementIds.includes(ann.id)
@@ -22,7 +25,7 @@ export default function AnnouncementBadge() {
     } catch (error) {
       console.error('Failed to fetch announcements for badge:', error);
     }
-  }, []);
+  }, [tenantId]);
 
   useEffect(() => {
     calculateUnreadCount();

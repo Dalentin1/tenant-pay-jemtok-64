@@ -21,8 +21,9 @@ export default function AnnouncementsPage() {
   const [tenant, setTenant] = useState<Tenant | null | undefined>(null);
   const [loading, setLoading] = useState(true);
 
+  const tenantId = params.tenantId as string;
+
   useEffect(() => {
-    const tenantId = params.tenantId as string;
     if (!tenantId) return;
 
     async function fetchData() {
@@ -39,9 +40,10 @@ export default function AnnouncementsPage() {
         setAnnouncements(announcementsData);
 
         if (typeof window !== 'undefined' && announcementsData.length > 0) {
-            const readAnnouncementIds = new Set(JSON.parse(localStorage.getItem('readAnnouncementIds') || '[]'));
+            const storageKey = `readAnnouncementIds_${tenantId}`;
+            const readAnnouncementIds = new Set(JSON.parse(localStorage.getItem(storageKey) || '[]'));
             announcementsData.forEach(ann => readAnnouncementIds.add(ann.id));
-            localStorage.setItem('readAnnouncementIds', JSON.stringify(Array.from(readAnnouncementIds)));
+            localStorage.setItem(storageKey, JSON.stringify(Array.from(readAnnouncementIds)));
             window.dispatchEvent(new Event('announcements-read'));
         }
 
@@ -53,7 +55,7 @@ export default function AnnouncementsPage() {
       }
     }
     fetchData();
-  }, [params]);
+  }, [tenantId]);
 
   if (loading) {
     return (

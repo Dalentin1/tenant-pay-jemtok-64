@@ -50,7 +50,7 @@ export default function AnnouncementForm() {
           placeholder="e.g., Water Maintenance"
         />
         {state.errors?.title && (
-          <p className="text-sm text-destructive mt-1">{state.errors.title[0]}</p>
+          <p className="text-sm text-destructive mt-1 ">{state.errors.title[0]}</p>
         )}
       </div>
       <div>

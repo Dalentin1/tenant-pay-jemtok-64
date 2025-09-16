@@ -59,10 +59,10 @@ export default async function AdminPage() {
 
 
   return (
-      <div className="space-y-8 p-4 sm:p-6 lg:p-8">
+      <div className="space-y-8 p-4 sm:p-6 lg:p-8 ">
         <h1 className="text-3xl font-bold font-headline hidden md:block">Admin Dashboard</h1>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="lg:col-span-1">
+        <div className="grid gap-8 md:grid-cols-2">
+            <Card>
                 <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                     <Handshake className="text-primary" />
@@ -76,7 +76,7 @@ export default async function AdminPage() {
                     <DelegateTaskForm tenants={tenants} />
                 </CardContent>
             </Card>
-            <Card className="lg:col-span-2">
+            <Card>
                 <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                         <Users className="text-primary" />
@@ -91,27 +91,27 @@ export default async function AdminPage() {
                 </CardContent>
             </Card>
 
-          <Card className="lg:col-span-1">
+          <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Receipt className="text-primary" />
                 Add Shared Utility Bill
               </CardTitle>
               <CardDescription>
-                Add a utility bill to be split among all tenants. The amount will be added to each tenant's current unpaid bill.
+                Add a utility bill to be split among all tenants.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <SharedBillForm />
             </CardContent>
           </Card>
-          <Card className="lg:col-span-2">
+          <Card>
             <CardHeader>
                 <CardTitle className='flex items-center gap-2'>
                     <Receipt className="text-primary" />
                     Shared Bills History
                 </CardTitle>
-                <CardDescription>A record of all shared bills by month. You can edit allocations for the current month.</CardDescription>
+                <CardDescription>A record of all shared bills by month.</CardDescription>
             </CardHeader>
             <CardContent>
                 {sortedMonths.length > 0 ? (
@@ -168,7 +168,7 @@ export default async function AdminPage() {
                 )}
             </CardContent>
           </Card>
-          <Card className="lg:col-span-1">
+          <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <FilePlus2 className="text-primary" />
@@ -182,7 +182,7 @@ export default async function AdminPage() {
               <BillUploadForm tenants={tenants} />
             </CardContent>
           </Card>
-           <Card className="lg:col-span-2">
+           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Megaphone className="text-primary" />
@@ -197,7 +197,7 @@ export default async function AdminPage() {
             </CardContent>
           </Card>
 
-          <Card className="lg:col-span-3">
+          <Card className="md:col-span-2">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Users className="text-primary" />
@@ -245,7 +245,7 @@ export default async function AdminPage() {
               </Table>
             </CardContent>
           </Card>
-          <Card className="lg:col-span-3 border-destructive">
+          <Card className="md:col-span-2">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-destructive">
                 <AlertTriangle />

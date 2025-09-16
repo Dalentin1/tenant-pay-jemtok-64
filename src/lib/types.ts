@@ -3,6 +3,8 @@ export type Tenant = {
   name: string;
   propertyAddress: string;
   imageUrl?: string;
+  amount: number;
+  month: string;
 };
 
 export type Bill = {
@@ -52,3 +54,5 @@ export type Delegate = {
   task: string;
   tenantId: string;
 };
+
+

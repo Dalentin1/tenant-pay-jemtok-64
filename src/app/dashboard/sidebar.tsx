@@ -54,7 +54,7 @@ export default function DashboardSidebar({
       href: `/dashboard/${tenantId}/announcements`,
       label: 'Announcements',
       icon: Megaphone,
-      badge: <AnnouncementBadge />,
+      badge: <AnnouncementBadge tenantId={tenantId} />,
     },
     {
       href: `/dashboard/${tenantId}/history`,
@@ -149,3 +149,4 @@ export default function DashboardSidebar({
     </>
   );
 }
+

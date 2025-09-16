@@ -38,29 +38,9 @@ export default async function DashboardLayout({
   const headerTitle = userType === 'admin' ? 'Admin Dashboard' : `Welcome, ${userName}`;
 
   return (
-    <div className="w-full">
-      <style>
-        {`
-          @keyframes gradient {
-            0% {
-              background-position: 0% 50%;
-            }
-            50% {
-              background-position: 100% 50%;
-            }
-            100% {
-              background-position: 0% 50%;
-            }
-          }
-          .animated-gradient {
-            background: linear-gradient(-45deg, hsl(var(--background)), hsl(var(--secondary)), hsl(var(--background)), hsl(var(--muted)));
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-          }
-        `}
-      </style>
+    <div className="w-full  ">
       <SidebarProvider>
-        <div className="flex min-h-screen w-full">
+        <div className="flex min-h-screen w-full  ">
           <Sidebar>
             <DashboardSidebar
               userType={userType}
@@ -76,7 +56,7 @@ export default async function DashboardLayout({
                 </SidebarTrigger>
                 <h1 className="text-xl font-bold">{headerTitle}</h1>
             </header>
-            <main className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">{children}</main>
+            <main className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 bg-[length:400%_400%] animate-gradient ">{children}</main>
           </SidebarInset>
         </div>
       </SidebarProvider>
