@@ -1,0 +1,92 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Define database connection via the `DATABASE_URL` env var
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("POSTGRES_URL")
+}
+
+// Define custom output path for generated Prisma Client
+generator client {
+  provider        = "prisma-client-js"
+  output          = "./src/generated/prisma-client"
+  previewFeatures = ["driverAdapters"]
+}
+
+model Tenant {
+  id              String          @id @default(cuid())
+  name            String
+  propertyAddress String
+  imageUrl        String?
+  bills           Bill[]
+  payments        Payment[]
+  delegations     Delegate[]
+  allocatedBills  AllocatedBill[]
+}
+
+model Bill {
+  id                String    @id @default(cuid())
+  tenantId          String
+  amount            Float
+  month             String // e.g., "2024-07"
+  status            String // 'paid', 'unpaid', 'carried-over'
+  dueDate           DateTime
+  carriedOverAmount Float?
+  tenant            Tenant    @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  payments          Payment[]
+
+  @@index([tenantId])
+}
+
+model Payment {
+  id          String   @id @default(cuid())
+  tenantId    String
+  billId      String
+  amount      Float
+  paymentDate DateTime
+  receiptId   String   @unique
+  receiptText String
+  tenant      Tenant   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  bill        Bill     @relation(fields: [billId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+  @@index([billId])
+}
+
+model SharedBill {
+  id             String          @id @default(cuid())
+  name           String
+  amount         Float
+  date           DateTime // For the month it applies to
+  allocatedBills AllocatedBill[]
+}
+
+model AllocatedBill {
+  id           String     @id @default(cuid())
+  sharedBillId String
+  tenantId     String
+  amount       Float
+  sharedBill   SharedBill @relation(fields: [sharedBillId], references: [id], onDelete: Cascade)
+  tenant       Tenant     @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([sharedBillId])
+  @@index([tenantId])
+}
+
+model Announcement {
+  id      String   @id @default(cuid())
+  title   String
+  content String
+  date    DateTime
+}
+
+model Delegate {
+  id       String @id @default(cuid())
+  task     String
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+}
